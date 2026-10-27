@@ -1,0 +1,103 @@
+/* Page Styles */ 
+
+body {
+    font-family: monospace, helvetica, sans-serif;
+    margin: 20px;
+    background-color: #814ccb;
+}
+/* Header Styles */
+header {
+    background-color: #de2040;
+    font-size: 24px;
+    color: #db8f0c;
+    padding: 20px;
+    text-align: center;
+    text-decoration: bold;
+}
+/* Navigation Styles */
+nav {
+    background-color: #18dcd9;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #e00505;
+    text-decoration: bold;
+    margin: 0 10px;
+}
+/* Section Styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #4e7c7b;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    color: #d8b26e;
+    padding: 10px;
+    text-align: right;
+    text-decoration: italic;
+}   
+
+.intro {
+    font-size: 18px;
+    color: #d8b26e;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: bold;
+}
+
+#title {
+    font-size: 24px;
+    color: #d8b26e;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: bold;
+}
+*{
+    box-sizing: border-box;
+}
+
+.poem-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.poem-card {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .poem-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
